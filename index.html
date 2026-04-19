@@ -12,7 +12,7 @@
 
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper tabs-inner">
 		<header class="header">
     <div class="container">
         <div class="header__inner">
@@ -46,7 +46,7 @@
 							<span class="main__title--text2">ШИГА&shy;ЛЕЕВО <sup>TM</sup></span>
 							<span class="main__title--text3">Новый взгляд на индустриальную недвижимость</span>
 						</h1>
-						<button class="main__btn btn btn-orange__outline">
+						<button data-tab-path="1" class="main__btn btn btn-orange__outline tab" data-modal="contactModal">
 							<span class="btn-text">ОСТАВИТЬ ЗАЯВКУ</span>
 							<span class="btn-line"></span>
 							<span class="btn-line2"></span>
@@ -94,7 +94,7 @@
 										<span class="btn-line3"></span>
 										<span class="btn-line4"></span>
 									</a>
-									<button class="area__btn btn btn-orange__outline">
+									<button data-tab-path="2" class="area__btn btn btn-orange__outline tab" data-modal="contactModal">
 										<span class="btn-text">Подобрать формат</span>
 										<span class="btn-line"></span>
 										<span class="btn-line2"></span>
@@ -786,7 +786,7 @@
 													</li>
 												</ul>
 												<div class="format-card__btns">
-													<button class="format-card__btn btn btn-orange__outline">
+													<button data-tab-path="3" class="format-card__btn btn btn-orange__outline tab" data-modal="contactModal">
 														<span class="btn-text">ЗАПРОСИТЬ ПЛАНИРОВКИ</span>
 														<span class="btn-line"></span>
 														<span class="btn-line2"></span>
@@ -817,7 +817,7 @@
 													</li>
 												</ul>
 												<div class="format-card__btns">
-													<button class="format-card__btn btn btn-orange__outline">
+													<button data-tab-path="3" class="format-card__btn btn btn-orange__outline tab" data-modal="contactModal">
 														<span class="btn-text">ЗАПРОСИТЬ ПЛАНИРОВКИ</span>
 														<span class="btn-line"></span>
 														<span class="btn-line2"></span>
@@ -848,7 +848,7 @@
 													</li>
 												</ul>
 												<div class="format-card__btns">
-													<button class="format-card__btn btn btn-orange__outline">
+													<button data-tab-path="3" class="format-card__btn btn btn-orange__outline tab" data-modal="contactModal">
 														<span class="btn-text">ЗАПРОСИТЬ ПЛАНИРОВКИ</span>
 														<span class="btn-line"></span>
 														<span class="btn-line2"></span>
@@ -879,7 +879,7 @@
 													</li>
 												</ul>
 												<div class="format-card__btns">
-													<button class="format-card__btn btn btn-orange__outline">
+													<button data-tab-path="3" class="format-card__btn btn btn-orange__outline tab" data-modal="contactModal">
 														<span class="btn-text">ЗАПРОСИТЬ ПЛАНИРОВКИ</span>
 														<span class="btn-line"></span>
 														<span class="btn-line2"></span>
@@ -1159,7 +1159,7 @@
 												<span class="btn-line3"></span>
 												<span class="btn-line4"></span>
 											</a>
-											<button class="project-card__btn btn btn-orange__outline">
+											<button data-tab-path="4" class="project-card__btn btn btn-orange__outline tab" data-modal="contactModal">
 												<span class="btn-text">Подобрать формат</span>
 												<span class="btn-line"></span>
 												<span class="btn-line2"></span>
@@ -1199,14 +1199,14 @@
 						<div class="container">
 							<div class="facilities__bottom-inner">
 								<div class="facilities__btns">
-									<button class="facilities__btn btn btn-white__outline">
+									<button data-tab-path="rent" class="facilities__btn btn btn-white__outline">
 										<span class="btn-text">АРЕНДА</span>
 										<span class="btn-line"></span>
 										<span class="btn-line2"></span>
 										<span class="btn-line3"></span>
 										<span class="btn-line4"></span>
 									</button>
-									<button class="facilities__btn btn btn-white__outline">
+									<button data-tab-path="sale" class="facilities__btn btn btn-white__outline">
 										<span class="btn-text">ПРОДАЖА</span>
 										<span class="btn-line"></span>
 										<span class="btn-line2"></span>
@@ -1235,7 +1235,7 @@
 												<td>Готов</td>
 												<td>По запросу</td>
 											</tr>
-											<tr>
+											<tr data-content-path="sale">
 												<td>C <span style="margin-left: 30px">ГАБ</span></td>
 												<td>582 м²</td>
 												<td>1</td>
@@ -1243,7 +1243,7 @@
 												<td>Готов</td>
 												<td>По запросу</td>
 											</tr>
-											<tr>
+											<tr data-content-path="rent">
 												<td>B</td>
 												<td>3 213 м²</td>
 												<td>2 | 2</td>
@@ -1251,7 +1251,7 @@
 												<td>Готов</td>
 												<td>По запросу</td>
 											</tr>
-											<tr>
+											<tr data-content-path="sale">
 												<td>C</td>
 												<td>3 184 м²</td>
 												<td>2 | 2</td>
@@ -1259,7 +1259,7 @@
 												<td>Готов</td>
 												<td>По запросу</td>
 											</tr>
-											<tr>
+											<tr data-content-path="rent">
 												<td>C <span style="margin-left: 30px;">АКЦИЯ</span></td>
 												<td>2 042 м²</td>
 												<td>1 | 1</td>
@@ -1267,7 +1267,7 @@
 												<td>Готов</td>
 												<td>По запросу</td>
 											</tr>
-											<tr>
+											<tr data-content-path="sale">
 												<td>C</td>
 												<td>2 024 м²</td>
 												<td>2</td>
@@ -1275,7 +1275,7 @@
 												<td>Готов</td>
 												<td>По запросу</td>
 											</tr>
-											<tr>
+											<tr data-content-path="sale">
 												<td>C</td>
 												<td>1 592 м²</td>
 												<td>1 | 1</td>
@@ -1283,7 +1283,7 @@
 												<td>Готов</td>
 												<td>По запросу</td>
 											</tr>
-											<tr>
+											<tr data-content-path="rent">
 												<td>C</td>
 												<td>1031 м²</td>
 												<td>1</td>
@@ -1353,7 +1353,7 @@
 												</div>
 												<div class="program-card__item"></div>
 											</div>
-											<button class="program-card__btn btn btn-orange__outline">
+											<button data-tab-path="5" class="program-card__btn btn btn-orange__outline tab" data-modal="contactModal">
 												<span class="btn-text">ОФОРМИТЬ ЗАЯВКУ</span>
 												<span class="btn-line"></span>
 												<span class="btn-line2"></span>
@@ -1387,7 +1387,7 @@
 													<div class="program-card__item-text text16">срок финансовой поддержки</div>
 												</div>
 											</div>
-											<button class="program-card__btn btn btn-orange__outline">
+											<button data-tab-path="5" class="program-card__btn btn btn-orange__outline tab" data-modal="contactModal">
 												<span class="btn-text">ОФОРМИТЬ ЗАЯВКУ</span>
 												<span class="btn-line"></span>
 												<span class="btn-line2"></span>
@@ -1421,7 +1421,7 @@
 													<div class="program-card__item-text text16">срок кредитования</div>
 												</div>
 											</div>
-											<button class="program-card__btn btn btn-orange__outline">
+											<button data-tab-path="5" class="program-card__btn btn btn-orange__outline tab" data-modal="contactModal">
 												<span class="btn-text">ОФОРМИТЬ ЗАЯВКУ</span>
 												<span class="btn-line"></span>
 												<span class="btn-line2"></span>
@@ -1442,7 +1442,7 @@
 													<div class="program-card__item-text text16">Приобретение площадей по минимальной цене</div>
 												</div>
 											</div>
-											<button class="program-card__btn btn btn-orange__outline">
+											<button data-tab-path="5" class="program-card__btn btn btn-orange__outline tab" data-modal="contactModal">
 												<span class="btn-text">ОФОРМИТЬ ЗАЯВКУ</span>
 												<span class="btn-line"></span>
 												<span class="btn-line2"></span>
@@ -1719,9 +1719,71 @@
     </div>
 </footer>
 
+		<div class="modal" id="contactModal">
+			<div class="modal__dialog">
+				<button type="button" class="_close-modal modal__close btn btn-animation btn-pink" data-bs-dismiss="modal" aria-label="Close">
+					<img src="img/close.svg" alt="">
+				</button>
+				<div class="modal__content">
+					<h2 data-content-path="1" class="modal__title tab__content">Оставить заявку</h2>
+					<h2 data-content-path="2" class="modal__title tab__content">Подобрать формат</h2>
+					<h2 data-content-path="3" class="modal__title tab__content">Запросить планировки</h2>
+					<h2 data-content-path="4" class="modal__title tab__content">Подобрать формат</h2>
+					<h2 data-content-path="5" class="modal__title tab__content">ОФОРМИТЬ ЗАЯВКУ</h2>
+					<form class="form">
+						<div class="form-group">
+							<input type="text" placeholder="Ваше имя">
+						</div>
+						<div class="form-group">
+							<input type="text" placeholder="Номер телефона">
+						</div>
+						<div class="form__check">
+							<input type="checkbox">
+							<label>Я даю согласие на <a href="">обработку персональных данных</a></label>
+						</div>
+						<button data-content-path="1" class="modal__btn btn btn-orange__outline tab__content">
+							<span class="btn-text">Оставить заявку</span>
+							<span class="btn-line"></span>
+							<span class="btn-line2"></span>
+							<span class="btn-line3"></span>
+							<span class="btn-line4"></span>
+						</button>
+						<button data-content-path="2" class="modal__btn btn btn-orange__outline tab__content">
+							<span class="btn-text">Подобрать формат</span>
+							<span class="btn-line"></span>
+							<span class="btn-line2"></span>
+							<span class="btn-line3"></span>
+							<span class="btn-line4"></span>
+						</button>
+						<button data-content-path="3" class="modal__btn btn btn-orange__outline tab__content">
+							<span class="btn-text">Запросить планировки</span>
+							<span class="btn-line"></span>
+							<span class="btn-line2"></span>
+							<span class="btn-line3"></span>
+							<span class="btn-line4"></span>
+						</button>
+						<button data-content-path="4" class="modal__btn btn btn-orange__outline tab__content">
+							<span class="btn-text">Подобрать формат</span>
+							<span class="btn-line"></span>
+							<span class="btn-line2"></span>
+							<span class="btn-line3"></span>
+							<span class="btn-line4"></span>
+						</button>
+						<button data-content-path="5" class="modal__btn btn btn-orange__outline tab__content">
+							<span class="btn-text">ОФОРМИТЬ ЗАЯВКУ</span>
+							<span class="btn-line"></span>
+							<span class="btn-line2"></span>
+							<span class="btn-line3"></span>
+							<span class="btn-line4"></span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
+
 
 </body>
 
